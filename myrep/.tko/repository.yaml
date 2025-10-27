@@ -1,0 +1,32 @@
+version: '0.2'
+sources:
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
+- database: poo
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: /workspaces/poo-rc-bloco-b-Eduardoe239/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-26 20:26:46'
+  filters:
+  - acesso
+  - simples
+expanded:
+- poo@campanha-principal
+- poo@bloco_b-modificadores-de-acesso
+- poo@bloco_b-agregação-simples
+tasks:
+  poo@chinela: '{rate:100, alone:10}'
+  poo@camisa: '{rate:100, alone:10}'
+  poo@roupa: '{rate:100, alone:10}'
+  poo@relogio: '{rate:100, alone:10}'
+  poo@motoca: '{rate:100, alone:1}'
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 1
+  xray: 0
+lang: py
+selected: poo@tamagotchi

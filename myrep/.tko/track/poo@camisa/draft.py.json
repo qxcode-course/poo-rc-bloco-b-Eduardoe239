@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-21_23-02-23",
+            "content": "@@ -0,0 +1,316 @@\n+class Camisa:%0A    def __init__(self):%0A        self.__tamanho: str = %22%22%0A%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A    %0A    def setTamanho(self, valor: str):%0A        if valor in%5B%22PP, P, M, G, GG%22%5D:%0A            self.__tamanho = valor%0A        else:%0A            print(%22Tamanho roupa nao encontrado%22)\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-21_23-20-40",
+            "content": "@@ -1,544 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho: str = %22%22%0A%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A    %0A    def setTamanho(self, valor: str):%0A        if valor in%5B%22PP%22,%22P%22, %22M%22, %22G%22, %22GG%22%5D:%0A            self.__tamanho = valor%0A        else:%0A            print(%22valor roupa nao encontrado%22)%0A%0Adef main():%0A    camisa = Camisa()%0A%0A    while camisa.getTamanho == %22%22:%0A        tamanho = input(%22: %22)%0A        camisa.setTamanho(tamanho)%0A        print(%22parabens voce comprou uma blusa tamanho%22, camisa.getTamanho())%0A%0Amain()%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-21_23-58-38",
+            "content": "@@ -219,14 +219,8 @@\n %22GG%22\n-, %22XG%22\n %5D:%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-22_00-00-28",
+            "content": "@@ -42,25 +42,25 @@\n      self.__\n-T\n+t\n amanho: str \n@@ -85,24 +85,31 @@\n amanho(self)\n+ -%3E str\n :%0A        re\n@@ -124,16 +124,20 @@\n f.__\n-T\n+t\n amanho%0A\n+    \n %0A   \n@@ -196,17 +196,16 @@\n in%5B%22PP%22,\n- \n %22P%22, %22M%22\n@@ -243,17 +243,17 @@\n  self.__\n-T\n+t\n amanho =\n@@ -384,18 +384,16 @@\n tTamanho\n-()\n  == %22%22:%0A\n@@ -457,16 +457,20 @@\n amanho)%0A\n+    \n     prin\n@@ -498,20 +498,19 @@\n rou uma \n-cami\n+blu\n sa taman\n@@ -538,13 +538,12 @@\n o())\n- \n %0A%0Amain()\n@@ -538,12 +538,13 @@\n o())%0A%0Amain()\n+%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-22_00-22-30",
+            "content": "@@ -0,0 +1,539 @@\n+class Camisa:%0A    def __init__(self):%0A        self.__Tamanho: str = %22%22%0A%0A    def getTamanho(self):%0A        return self.__Tamanho%0A%0A    def setTamanho(self, valor: str):%0A        if valor in%5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            self.__Tamanho = valor%0A        else:%0A            print(%22valor roupa nao encontrado%22)%0A%0Adef main():%0A    camisa = Camisa()%0A%0A    while camisa.getTamanho() == %22%22:%0A        tamanho = input(%22: %22)%0A        camisa.setTamanho(tamanho)%0A    print(%22parabens voce comprou uma camisa tamanho%22, camisa.getTamanho()) %0A%0Amain()\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-22_12-33-58",
+            "content": "@@ -1,326 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__Tamanho: str = %22%22%0A%0A    def getTamanho(self):%0A        return self.__Tamanho()%0A    %0A    def setTamanho(self, V: str):%0A        if V in%5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22GX%22%5D:%0A            self.__Tamanho = V%0A        else:%0A            print(%22Fail: valor roupa nao encontrado%22)%0A        \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-25_21-07-52",
+            "content": "@@ -315,228 +315,8 @@\n o%22)%0A\n-def main():%0A    camisa = Camisa()%0A%0A    while camisa.getTamanho() == %22%22:%0A        tamanho = input(%22: %22)%0A        camisa.setTamanho(tamanho)%0A    print(%22Parabens, voce comprou uma camisa tamanho%22, camisa.getTamanho())%0Amain()%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-25_21-10-33",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__Tamanho: str = \"\"\n\n    def getTamanho(self):\n        return self.__Tamanho()\n    \n    def setTamanho(self, V: str):\n        if V in[\"PP\", \"P\", \"M\", \"G\", \"GG\", \"GX\"]:\n            self.__Tamanho = V\n        else:\n            print(\"Fail: valor roupa nao encontrado\")\ndef main():\n    camisa = Camisa()\n\n    while camisa.getTamanho() == \"\":\n        tamanho = input(\": \")\n        camisa.setTamanho(tamanho)\n    print(\"Parabens, voce comprou uma camisa tamanho\", camisa.getTamanho())\nmain()\n        ",
+            "lines": "21"
+        }
+    ]
+}

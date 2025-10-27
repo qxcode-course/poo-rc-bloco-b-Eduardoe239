@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-15_12-29-53",
+            "content": "@@ -0,0 +1,21 @@\n+class Motoca:%0A    def\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-25_20-28-13",
+            "content": "@@ -1,5 +0,0 @@\n-class\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-25_22-05-04",
+            "content": "@@ -2,9 +2,4 @@\n lass\n-%0A    \n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-10-25_22-06-39",
+            "content": "@@ -1,5 +1,10 @@\n class\n+%0A    \n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-25_22-08-48",
+            "content": "@@ -2,17 +2,4 @@\n lass\n- pessoa:%0A    \n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-10-25_22-12-15",
+            "content": "@@ -3,732 +3,15 @@\n ass \n-Pessoa:%0A    def __init__(self, nome: str, age: int):%0A        self.__name = nome%0A        self.__age = age%0A    %0A    def getAge(self):%0A        return self.__age%0A    def getName(self):%0A        return self.__name%0A    def __str__(self):%0A        return f%22%7Bself.__name%7D:%7Bself.__age%7D%22%0A    %0Aclass Motoca:%0A    def __init__(self, potencia: int = 1):%0A        self.__potencia = potencia%0A        self.__time : int = 0%0A        self.__pessoa = None%0A%0A    def __str__(self):%0A        if self.__pessoa is not None:%0A            return f%22power:%7Bself.__potencia%7D, time:%7Bself.__time%7D, person:(%7Bself.__pessoa%7D)%22%0A        else:%0A            return f%22power:%7Bself.__potencia%7D, time:%7Bself.__time%7D, person:(empity)%22%0A    %0A    def inserir(self, pessoa:Pessoa)\n+pessoa:\n %0A   \n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-26_20-27-06",
+            "content": "@@ -676,16 +676,17 @@\n son:(emp\n+i\n ty)%22%0A   \n@@ -727,917 +727,9 @@\n soa)\n- -%3E bool:%0A        if self.__pessoa is not None:%0A            print(%22fail: busy motorcycle%22)%0A            return False%0A        self.__pessoa = pessoa%0A        return True%0A%0A    def remover(self):%0A        if self.__pessoa is None:%0A            print(%22fail: empty motorcycle%22)%0A            return None%0A        pessoa_rem = None%0A        return pessoa_rem%0A    def buyTime(self, time: int):%0A        self.__time += time%0A%0A    def drive(self, timer: int):%0A        if self.__time == 0:%0A            print(%22fail: buy time first%22)%0A            return%0A        if self.__pessoa is None:%0A            print(%22fail: empty motorcycle%22)%0A            return%0A        if self.__pessoa.getAge() %3E 10:%0A            print(f%22fail: time finished after %7Bself.__time%7D minutes%22)%0A            self.__time = 0 %0A        else:%0A            self.__time -= timer%0A%0A        def honk(self):%0A            return %22P%22 + (%22e%22 * self.__potencia) + %22m%22%0A        %0Adef main()\n+%0A    \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-26_20-40-05",
+            "content": "@@ -1639,862 +1639,4 @@\n in()\n-:%0A    moto = Motoca()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(moto)%0A        elif args%5B0%5D == %22init%22:%0A            potencia = int(args%5B1%5D)%0A            moto = Motoca(potencia)%0A        elif args%5B0%5D == %22enter%22:%0A            name = args%5B1%5D%0A            idade = int(args%5B2%5D)%0A            pessoa = Pessoa(name, idade)%0A            moto.inserir(pessoa)%0A        elif args%5B0%5D == %22leave%22:%0A            pessoa = moto.remover()%0A            if pessoa is not None:%0A                print(pessoa)%0A        elif args%5B0%5D == %22buy%22:%0A            moto.buyTime(int(args%5B1%5D))%0A        elif args%5B0%5D == %22drive%22:%0A            time = int(args%5B1%5D)%0A            moto.drive(time)%0A        elif args%5B0%5D == %22honk%22:%0A            print(moto.honk())%0A%0Amain()\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_20-52-12",
+            "content": "@@ -1039,52 +1039,14 @@\n em =\n- self.__pessoa%0A        self.__pessoa =\n  None%0A\n+\n     \n@@ -1067,21 +1067,16 @@\n soa_rem%0A\n-    %0A\n     def \n@@ -1177,38 +1177,33 @@\n   if self.__\n-pessoa is None\n+time == 0\n :%0A          \n@@ -1267,33 +1267,38 @@\n   if self.__\n-time == 0\n+pessoa is None\n :%0A          \n@@ -1394,48 +1394,8 @@\n 10:%0A\n-            if timer %3E self.__time:%0A    \n     \n@@ -1464,36 +1464,32 @@\n s%22)%0A            \n-    \n self.__time = 0 \n@@ -1493,38 +1493,30 @@\n  0 %0A        \n-    \n else:%0A\n-    \n             \n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-26_21-03-18",
+            "content": "@@ -1228,17 +1228,22 @@\n f.__\n-time == 0\n+pessoa is None\n :%0A  \n@@ -1315,38 +1315,33 @@\n   if self.__\n-pessoa is None\n+time == 0\n :%0A          \n@@ -1441,67 +1441,8 @@\n     \n-        print(%22fail: too old to drive%22)%0A            return%0A\n     \n@@ -1469,16 +1469,20 @@\n __time:%0A\n+    \n         \n@@ -1547,32 +1547,36 @@\n s%22)%0A            \n+    \n self.__time = 0%0A\n@@ -1574,25 +1574,27 @@\n time = 0\n-%0A\n+ %0A \n         \n else:%0A  \n@@ -1577,32 +1577,35 @@\n e = 0 %0A         \n+   \n else:%0A          \n@@ -1598,32 +1598,36 @@\n se:%0A            \n+  \n+  \n self.__time -= t\n@@ -1632,16 +1632,20 @@\n  timer%0A%0A\n+    \n     def \n@@ -1648,32 +1648,36 @@\n def honk(self):%0A\n+    \n         return %22\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-26_21-08-01",
+            "content": "class Pessoa:\n    def __init__(self, nome: str, age: int):\n        self.__name = nome\n        self.__age = age\n    \n    def getAge(self):\n        return self.__age\n    def getName(self):\n        return self.__name\n    def __str__(self):\n        return f\"{self.__name}:{self.__age}\"\n    \nclass Motoca:\n    def __init__(self, potencia: int = 1):\n        self.__potencia = potencia\n        self.__time : int = 0\n        self.__pessoa = None\n\n    def __str__(self):\n        if self.__pessoa is not None:\n            return f\"power:{self.__potencia}, time:{self.__time}, person:({self.__pessoa})\"\n        else:\n            return f\"power:{self.__potencia}, time:{self.__time}, person:(empty)\"\n    \n    def inserir(self, pessoa:Pessoa) -> bool:\n        if self.__pessoa is not None:\n            print(\"fail: busy motorcycle\")\n            return False\n        self.__pessoa = pessoa\n        return True\n\n    def remover(self):\n        if self.__pessoa is None:\n            print(\"fail: empty motorcycle\")\n            return None\n        pessoa_rem = self.__pessoa\n        self.__pessoa = None\n        return pessoa_rem\n    \n    def buyTime(self, time: int):\n        self.__time += time\n\n    def drive(self, timer: int):\n        if self.__time == 0:\n            print(\"fail: buy time first\")\n            return\n        if self.__pessoa is None:\n            print(\"fail: empty motorcycle\")\n            return\n        if self.__pessoa.getAge() > 10:\n            print(\"fail: too old to drive\")\n            return\n        if timer > self.__time:\n            print(f\"fail: time finished after {self.__time} minutes\")\n            self.__time = 0\n        else:\n            self.__time -= timer\n\n    def honk(self):\n        return \"P\" + (\"e\" * self.__potencia) + \"m\"\n        \ndef main():\n    moto = Motoca()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(moto)\n        elif args[0] == \"init\":\n            potencia = int(args[1])\n            moto = Motoca(potencia)\n        elif args[0] == \"enter\":\n            name = args[1]\n            idade = int(args[2])\n            pessoa = Pessoa(name, idade)\n            moto.inserir(pessoa)\n        elif args[0] == \"leave\":\n            pessoa = moto.remover()\n            if pessoa is not None:\n                print(pessoa)\n        elif args[0] == \"buy\":\n            moto.buyTime(int(args[1]))\n        elif args[0] == \"drive\":\n            time = int(args[1])\n            moto.drive(time)\n        elif args[0] == \"honk\":\n            print(moto.honk())\n\nmain()",
+            "lines": "93"
+        }
+    ]
+}

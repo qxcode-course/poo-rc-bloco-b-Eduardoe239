@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_21-09-17",
+            "content": "@@ -1,4 +0,0 @@\n-def \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-26_21-14-14",
+            "content": "@@ -1,38 +1,4 @@\n-de\n def\n-fed%0Aededede%0Adeseferfd%0Acwdefwewde%0A\n+ \n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-10-26_21-39-56",
+            "content": "@@ -1,2 +1,38 @@\n-%0A\n+dedeffed%0Aededede%0Adeseferfd%0Acwdefwewde\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-26_21-40-27",
+            "content": "@@ -1,557 +1,2 @@\n-class Person:%0A    def __init__(self, n: str, m: int):%0A        self.__name = n%0A        self.__money = m%0A%0A    def getName(self):%0A        return self.__name%0A    def getMoney(self):%0A        return self.__money%0A    %0A    def adMoney(self, v: int):%0A        self.__money -= v%0A        return f%22%7Bself.__name%7D:%7Bself.__money%7D%22%0A%0Aclass Mtuber:%0A    def __init__(self):%0A        self.__cost = 0%0A        self.__driver: Person %7C None = None%0A        self.__passenger: Person %7C None = None%0A%0A    def __str__(self):%0A        driver = str(self.__driver) if self.__driver else %22None%22\n+%0A%0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-26_22-05-53",
+            "content": "class Person:\n    def __init__(self, n: str, m: int):\n        self.__name = n\n        self.__money = m\n\n    def getName(self):\n        return self.__name\n    def getMoney(self):\n        return self.__money\n    \n    def adMoney(self, v: int):\n        self.__money -= v\n        return f\"{self.__name}:{self.__money}\"\n\nclass Mtuber:\n    def __init__(self):\n        self.__cost = 0\n        self.__driver: Person | None = None\n        self.__passenger: Person | None = None\n\n    def __str__(self):\n        driver = str(self.__driver) if self.__driver else \"None\"",
+            "lines": "22"
+        }
+    ]
+}

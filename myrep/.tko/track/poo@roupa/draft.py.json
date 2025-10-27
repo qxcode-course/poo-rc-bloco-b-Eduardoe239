@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-22_01-21-13",
+            "content": "@@ -1,321 +0,0 @@\n-class Jurivaldo:%0A    def __init__(self):%0A        self.__tamanho: str = %22%22%0A%0A    def getTamanho(self):%0A        return self.__tamanho%0A%0A    def setTamanho(self, valor: str):%0A        if valor in%5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            self.__tamanho = valor%0A        else:%0A            print(%22valor roupa nao encontrado%22)%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-22_12-33-48",
+            "content": "@@ -1,19 +1,23 @@\n class \n-Roupa\n+Jurivaldo\n :%0A    de\n@@ -258,32 +258,32 @@\n r%0A        else:%0A\n+\n             prin\n@@ -318,522 +318,4 @@\n o%22)%0A\n-def main():%0A    roupa = Roupa()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22+ line)%0A        args: list%5Bstr%5D = line.split()%0A%0A        if len(args) == 0:%0A            continue%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(f%22size: (%7Broupa.getTamanho()%7D)%22)%0A        elif args%5B0%5D == %22size%22:%0A            if len(args) %3E 1:%0A                roupa.setTamanho(args%5B1%5D)%0A            else:%0A                print(%22fail: Valor invalido, tente PP, P, M, G, GG, XG%22)%0Amain()%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-25_21-21-47",
+            "content": "@@ -774,34 +774,55 @@\n nt(%22\n-valor roupa nao encontrado\n+fail: Valor invalido, tente PP, P, M, G, GG, XG\n %22)%0Am\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_21-22-50",
+            "content": "@@ -285,55 +285,34 @@\n nt(%22\n-fail: Valor invalido, tente PP, P, M, G, GG, XG\n+valor roupa nao encontrado\n %22)%0Ad\n@@ -774,55 +774,34 @@\n nt(%22\n-fail: Valor invalido, tente PP, P, M, G, GG, XG\n+valor roupa nao encontrado\n %22)%0Am\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_21-23-48",
+            "content": "@@ -328,11 +328,9 @@\n , GG\n- ou\n+,\n  XG%22\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_21-24-16",
+            "content": "@@ -300,9 +300,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-25_21-24-29",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if valor in[\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanho = valor\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\ndef main():\n    roupa = Roupa()\n\n    while True:\n        line = input()\n        print(\"$\"+ line)\n        args: list[str] = line.split()\n\n        if len(args) == 0:\n            continue\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(f\"size: ({roupa.getTamanho()})\")\n        elif args[0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n            else:\n                print(\"fail: Valor invalido, tente PP, P, M, G, GG, XG\")\nmain()\n\n",
+            "lines": "33"
+        }
+    ]
+}

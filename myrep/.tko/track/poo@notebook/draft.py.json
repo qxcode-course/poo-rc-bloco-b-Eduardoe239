@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-15_11-39-09",
+            "content": "@@ -307,22 +307,17 @@\n -= usado\n-:%0A    \n+%0A\n     retu\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-15_11-39-25",
+            "content": "@@ -303,94 +303,22 @@\n rga \n-== 0:%0A        return 0%0A    usado = min(self.__carga, tempo)%0A    self.__carga -= usado%0A\n+-= usado:%0A    \n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-15_11-43-54",
+            "content": "@@ -573,175 +573,4 @@\n %7D)%22)\n-%0A%0A%0Aclass Carregador:%0A    def __init__(self, potencia: int):%0A        self.__potencia = potencia%0A%0A    def getPotencia(self):%0A        print(f%22(Potencia %7Bself.__potencia%7D)%22)%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-15_11-58-16",
+            "content": "@@ -744,172 +744,4 @@\n %22)%0A%0A\n-class Notebook:%0A    def __init__(self):%0A        self.__ligado = False%0A        self.__bateria: Bateria %7C None = None%0A        self.__carregador: Carregador %7C None = None%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-15_12-01-06",
+            "content": "@@ -895,20 +895,21 @@\n egador %7C None = None\n+%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_20-28-32",
+            "content": "class Bateria:\n    def __init__(self, capacidade: int):\n        self.__capacidade = capacidade\n        self.__carga = capacidade\n\ndef getCarga(self) -> int:\n    return self.__carga\n\ndef getCapacidade(self) -> int:\n    return self.__capacidade\n\ndef descarregar(self, tempo: int) -> int:\n    if self.__carga == 0:\n        return 0\n    usado = min(self.__carga, tempo)\n    self.__carga -= usado\n    return usado\n\ndef carregar(self, tempo: int):\n    self.__carga = min(self.__capacidade, self.__carga + tempo)\n\ndef mostrar(self):\n    print(f\"({self.__carga}/{self.__capacidade})\")\n\n\nclass Carregador:\n    def __init__(self, potencia: int):\n        self.__potencia = potencia\n\n    def getPotencia(self):\n        print(f\"(Potencia {self.__potencia})\")\n\nclass Notebook:\n    def __init__(self):\n        self.__ligado = False\n        self.__bateria: Bateria | None = None\n        self.__carregador: Carregador | None = None",
+            "lines": "37"
+        }
+    ]
+}
