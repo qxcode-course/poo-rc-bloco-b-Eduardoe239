@@ -31,3 +31,12 @@
 2025-10-27 19:51:36, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100, size:113
 2025-10-27 19:51:38, MOVE, v:1, k:poo@grafite, mode:BACK
 2025-10-27 19:51:47, SELF, v:1, k:poo@grafite, rate:100, alone:3
+2025-10-27 23:09:03, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-27 23:09:04, EXEC, v:1, k:poo@charger, mode:FULL, rate:0
+2025-10-27 23:09:06, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-27 23:11:31, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-27 23:15:14, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:3
+2025-10-27 23:15:14, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-27 23:28:31, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-27 23:56:35, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-27 23:56:39, MOVE, v:1, k:poo@charger, mode:PICK

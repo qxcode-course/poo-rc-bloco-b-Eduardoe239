@@ -12,7 +12,7 @@ sources:
   type: remote
   branch: master
   cache_path: /workspaces/poo-rc-bloco-b-Eduardoe239/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-27 18:36:40'
+  cache_timestamp: '2025-10-28 02:29:07'
   filters:
   - acesso
   - simples
@@ -28,6 +28,7 @@ tasks:
   poo@motoca: '{rate:100, alone:1}'
   poo@grafite: '{rate:100, alone:3}'
   poo@motouber: '{rate:100, alone:4}'
+  poo@charger: '{rate:100, alone:2}'
 flags:
   quests: 0
   tracks: 0
@@ -35,4 +36,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@grafite
+selected: poo@charger
